@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maximo Mentor Series: Session 1 -Maximo Application Suite – 4Max Ltd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fffffd; --text:#3f4c7c; --heading:#1d243c;
+    --accent:#5b37ff; --accent-dark:#4527d1;
+    --card-border:#ececf2; --footer-bg:#f5f5f8;
+    --font:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
+
+  .topbar{border-bottom:1px solid var(--card-border);padding:20px 0;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--heading);font-size:17px;}
+  .brand img{width:26px;height:26px;object-fit:contain;}
+  .back-link{font-size:14px;font-weight:600;color:var(--accent);display:flex;align-items:center;gap:6px;}
+
+  article{padding:56px 0 40px;}
+  .post-meta{font-size:14px;color:#8890ab;margin-bottom:14px;}
+  h1{color:var(--heading);font-size:38px;font-weight:700;line-height:1.25;margin:0 0 24px;}
+  .featured-img{border-radius:10px;margin-bottom:36px;overflow:hidden;}
+  .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin:36px 0;background:#000;}
+  .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+
+  .content h2{color:var(--heading);font-size:24px;font-weight:700;margin:36px 0 16px;}
+  .content h3{color:var(--heading);font-size:19px;font-weight:700;margin:28px 0 12px;}
+  .content p{font-size:16px;margin:0 0 18px;}
+  .content ul, .content ol{margin:0 0 18px;padding-left:22px;}
+  .content li{font-size:16px;margin-bottom:10px;}
+  .content strong{color:var(--heading);}
+
+  .post-footer-nav{
+    margin-top:48px;padding-top:28px;border-top:1px solid var(--card-border);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .btn-home{
+    display:inline-block;background:var(--accent);color:#fff;font-weight:600;
+    padding:12px 24px;border-radius:6px;font-size:14px;
+  }
+
+  footer{background:var(--footer-bg);padding:56px 0 28px;margin-top:40px;}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;color:var(--heading);margin-bottom:14px;}
+  .footer-brand img{width:28px;height:28px;object-fit:contain;}
+  footer .tagline{margin:0 0 20px;font-size:15px;}
+  .footer-social{display:flex;gap:14px;margin-bottom:36px;}
+  .footer-social a{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9e9f0;color:var(--heading);}
+  .footer-bottom{text-align:center;font-size:13px;color:#8890ab;border-top:1px solid #e6e6ee;padding-top:24px;}
+
+  @media(max-width:600px){h1{font-size:28px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="4Max Ltd"> 4Max Ltd</a>
+    <a class="back-link" href="fd-hub.html">&larr; Back to Functional Deployment articles</a>
+  </div>
+</div>
+
+<article class="wrap">
+  <div class="post-meta">martin &nbsp;·&nbsp; Mar 2, 2026</div>
+  <h1>Maximo Mentor Series: Session 1 - Maximo Application Suite</h1>
+
+  <div class="featured-img"><img src="assets/blog-session1.png" alt="Maximo Application Suite"></div>
+
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/_l3aP6qrxQs" title="Maximo Mentor Series: Session 1 - Maximo Application Suite" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="content">
+    <p>Welcome to the first installment of the Maximo Mentor Series! Hosted by Martin Williams, this initial session serves as a high-level introduction to the IBM Maximo Application Suite (MAS).</p>
+
+    <p>Whether you are looking to improve asset reliability, decrease unplanned downtime, or empower your technicians with modern tools, this session outlines how MAS can help organizations transform their traditional, time-scheduled preventive maintenance into intelligent, predictive strategies.</p>
+
+    <p>Here is a breakdown of the key points from the video, along with a couple of extra practical tips and tricks to keep in mind!</p>
+
+    <h2>Key Points from the Session</h2>
+
+    <h3>The Evolution of Maintenance</h3>
+    <p>A major theme of this session is the shift in maintenance strategies. Because a high percentage of asset failures happen randomly, traditional scheduled maintenance is often ineffective. By embracing IoT technologies, AI, and machine learning, MAS helps organizations leverage sensor data to detect anomalies and trigger immediate remedial action.</p>
+
+    <h3>Three Core Benefits of MAS</h3>
+    <p>The Maximo Application Suite was purpose-built to accelerate digital transformation. It offers three core benefits:</p>
+    <ol>
+      <li>Fully integrated suite: A single point of access for all asset lifecycle applications.</li>
+      <li>Simplified licensing: A flexible, usage-based model utilizing concurrent users.</li>
+      <li>Deployment flexibility: Multicloud deployment flexibility supported by Red Hat OpenShift.</li>
+    </ol>
+
+    <h3>Deep Dive into Suite Components</h3>
+    <p>The suite is made up of several powerful, integrated components that share a common UI and data model. This session focuses on Manage, Health, Predict and Monitor but don't forget about Visual Inspection and Maximo Mobile:</p>
+    <ul>
+      <li><strong>Maximo Manage:</strong> The traditional Enterprise Asset Management (EAM) system that clients are familiar with, focusing primarily on maintenance execution and controlling the cost of work.</li>
+      <li><strong>Maximo Monitor:</strong> Designed to ingest Operational Technology (OT) data at scale from siloed sources. It provides configurable dashboards, root cause analysis, and AI-based anomaly detection.</li>
+      <li><strong>Maximo Health:</strong> Integrates IoT data, weather, and work history to calculate asset health and criticality scores. It allows reliability engineers to easily identify assets needing attention, investigate problems, and plan for repair versus replacement.</li>
+      <li><strong>Maximo Predict:</strong> Goes beyond time-scheduled maintenance by using machine learning and data analytics to accurately forecast equipment failures before they happen, minimizing downtime and maintenance costs.</li>
+      <li><strong>Maximo Visual Inspection (MVI):</strong> A game-changing tool that uses cameras, mobile devices, or drones combined with built-in deep learning models to detect object failures and classify images without needing deep data science skills.</li>
+      <li><strong>Maximo Mobile:</strong> A next-generation, single role-based application that empowers field technicians by providing them with historical context, current asset health, and intelligent workflows right from their smart devices.</li>
+    </ul>
+
+    <h2>Tips and Tricks</h2>
+    <p>If you are currently studying for your certification (like the C1000-183 exam) or getting ready to deploy MAS, here are a few handy tips and tricks drawn from the video and technical documentation:</p>
+    <ul>
+      <li><strong>Tip 1: Master the Licensing Nuances.</strong> MAS uses a simplified "AppPoints" licensing model. When configuring users, you must choose an Access Type. Remember that Concurrent access utilizes a shared pool of AppPoints that are released when the user logs out, whereas Authorized access permanently reserves the AppPoints for that user independent of the current balance.</li>
+      <li><strong>Tip 2: Know Your Prerequisites and Platforms.</strong> It is vital to remember that the entire Maximo Application Suite is deployed only on Red Hat OpenShift. Furthermore, if you plan to implement AI models using Maximo Predict, you must have IBM Cloud Pak for Data installed as a prerequisite.</li>
+      <li><strong>Tip 3: Health Scoring Mechanics.</strong> If you are tasked with configuring Maximo Health, remember that health scoring calculations are achieved by defining Scoring Groups, Contributors, and Ranges. You can make these calculations as simple or complex as you need, even pulling in outputs directly from Monitor analytics.</li>
+    </ul>
+
+    <p>Stay tuned for our next session in the series as we continue to explore the powerful financial capabilities of the Maximo Application Suite!</p>
+  </div>
+
+  <div class="post-footer-nav">
+    <a class="back-link" href="fd-post-1.html">&larr; Previous: Roadmap</a>
+    <a class="btn-home" href="fd-post-3.html">Next: Session 2 &rarr;</a>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap" style="max-width:1160px;">
+    <div class="footer-brand"><img src="assets/logo.png" alt="4Max Ltd"> 4Max Ltd</div>
+    <p class="tagline">Maximo Enablement Specialist and Consulting Services</p>
+    <div class="footer-social">
+      <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3.2-.4-4.7a3 3 0 0 0-2.1-2.1C17.9 5 12 5 12 5s-5.9 0-7.5.2a3 3 0 0 0-2.1 2.1C2 8.8 2 12 2 12s0 3.2.4 4.7a3 3 0 0 0 2.1 2.1C6.1 19 12 19 12 19s5.9 0 7.5-.2a3 3 0 0 0 2.1-2.1c.4-1.5.4-4.7.4-4.7zM10 15V9l5 3-5 3z"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.5 8.5h3.9V21H3.5V8.5zM10 8.5h3.7v1.7h.05c.52-.94 1.78-1.93 3.67-1.93 3.92 0 4.64 2.4 4.64 5.53V21h-3.9v-6.14c0-1.46-.03-3.34-2.04-3.34-2.04 0-2.35 1.6-2.35 3.24V21H10V8.5z"/></svg></a>
+      <a href="#" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="footer-bottom">Copyright © 2026 &nbsp;·&nbsp; 4Max Ltd &nbsp;·&nbsp; All rights reserved</div>
+  </div>
+</footer>
+
+</body>
+</html>
