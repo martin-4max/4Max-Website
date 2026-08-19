@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#fffffd;font-family:'Inter',sans-serif;color:#3f4c7c;line-height:1.65;}
+  *{box-sizing:border-box;}
+  img{max-width:100%;display:block;}
+  a{color:#5b37ff;text-decoration:none;}
+  a:hover{color:#4527d1;}
+  @keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,40px,0);}100%{opacity:1;transform:none;}}
+  @keyframes heroZoom{0%{background-size:112% auto;}100%{background-size:128% auto;}}
+  @keyframes wordIn{0%{opacity:0;transform:translate3d(0,18px,0);}100%{opacity:1;transform:none;}}
+  @keyframes ruleIn{0%{width:0;}100%{width:64px;}}
+  @keyframes countPulse{0%{opacity:0;transform:translate3d(0,14px,0);}100%{opacity:1;transform:none;}}
+</style>
+<script data-enh-script="1" src="enhance.js"></script>
+</helmet>
+
+<div style="font-family:'Inter',sans-serif;color:#3f4c7c;background:#fffffd;line-height:1.65;padding-top:64px">
+
+  <nav ref="{{ navRef }}" style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,253,0.97);backdrop-filter:blur(6px);border-bottom:1px solid #ececf2">
+    <div style="max-width:1160px;margin:0 auto;padding:6px 16px;min-height:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 12px">
+      <a href="index.dc.html" style="display:flex;align-items:center;gap:10px;font-weight:700;color:#1d243c;font-size:16px;text-decoration:none">
+        <img src="assets/logo.png" alt="4Max Ltd" style="height:52px;width:auto;max-width:160px;object-fit:contain"> 4Max Ltd
+      </a>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px clamp(10px,2.4vw,28px);flex-shrink:1;min-width:0">
+        <a href="index.dc.html" style="font-size:clamp(12px,1.4vw,14px);font-weight:600;color:#3f4c7c;text-decoration:none;white-space:nowrap" style-hover="color:#5b37ff">Home</a>
+        <a href="4Max%20Articles.dc.html" style="font-size:clamp(12px,1.4vw,14px);font-weight:600;color:#3f4c7c;text-decoration:none;white-space:nowrap" style-hover="color:#5b37ff">Blog Articles</a>
+        <a href="4Max%20Recommendations.dc.html" style="font-size:clamp(12px,1.4vw,14px);font-weight:600;color:#3f4c7c;text-decoration:none;white-space:nowrap" style-hover="color:#5b37ff">Recommendations</a>
+        <a href="mailto:martin@4max.co.uk?subject=Contact%20from%204max%20Website" style="font-size:clamp(12px,1.4vw,14px);font-weight:600;background:#5b37ff;color:#fff;padding:9px clamp(10px,1.8vw,18px);border-radius:6px;text-decoration:none;white-space:nowrap" style-hover="background:#4527d1">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section data-reveal="1" style="padding:26px 0 28px;text-align:center">
+    <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+      <div style="color:#5b37ff;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px">LinkedIn Recommendations</div>
+      <h1 style="color:#1d243c;font-size:clamp(28px,5.2vw,42px);font-weight:700;margin:0 0 18px;line-height:1.2">What Colleagues &amp; Clients Say</h1>
+      <p style="max-width:680px;margin:0 auto;font-size:16px;text-wrap:pretty">Recommendations from peers, managers, and partners I've worked alongside across two decades in Maximo enablement, certification, and training — as shared on <a href="https://www.linkedin.com/in/martin-williams-maximo" target="_blank" rel="noopener" style="color:#5b37ff;text-decoration:none">LinkedIn</a>.</p>
+    </div>
+  </section>
+
+  <div style="max-width:960px;margin:0 auto;padding:0 24px">
+    <div ref="{{ listRef }}" style="padding:12px 0 40px;display:flex;flex-direction:column;gap:24px">
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-morgan-brown.jpg" alt="Morgan Brown" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Morgan Brown</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Building partner ecosystems that deliver | 20+ years IBM | Partner revenue growth expert</div>
+            <div style="font-size:12.5px;color:#8890ab">May 20, 2026 &nbsp;·&nbsp; Worked with Martin on the same team</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">There are experts, and then there are people who have genuinely shaped a field — Martin is firmly in the second category. I've had the privilege of working alongside Martin as a peer, and what strikes me most is the depth and dedication he brings to the world of Maximo. Over decades, he has built and delivered Maximo bootcamps and played a central role in writing certification programmes — not as a side project, but as a genuine vocation. He is, without exaggeration, one of the world's leading Maximo educators. What makes Martin special isn't just the breadth of his technical knowledge — it's how he shares it. He has an extraordinary ability to take complex, specialist material and make it accessible, practical, and genuinely useful for learners at every level. Countless professionals working with Maximo today have Martin's teaching to thank for their confidence and competence. If you're looking for someone who combines rare technical mastery with a real gift for education and knowledge-sharing, Martin is exceptional. I'm proud to recommend him.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-pawel-wozniak.jpg" alt="Pawel Wozniak" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Pawel Wozniak</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Senior Delivery Consultant</div>
+            <div style="font-size:12.5px;color:#8890ab">April 28, 2026 &nbsp;·&nbsp; Worked with Martin on the same team</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">A rare blend of technical mastery, pedagogical precision, and modern curriculum design. I have had the privilege of knowing and working with Martin Williams for 20 years. Our journey began when I was a student on one of his Maximo trainings. Later, we became colleagues in the Advanced Technology Group, where we co-developed &ldquo;Practiculums&rdquo;&mdash;high-level, hands-on training sessions for the most complex Maximo-related products. Martin is, quite simply, the best trainer I have ever encountered. As an instructor, he possesses a rare precision; he has a masterful ability to manage the pace of a room, ensuring that no student is left behind while keeping the most advanced learners engaged. In recent years, Martin has successfully translated this classroom magic into the digital sphere. His development of curricula for Maximo and the Maximo Application Suite (MAS) has been transformative. He has a unique gift for taking intricate, enterprise-level technical concepts and structuring them into online training programs that are both accessible and highly effective. Furthermore, Martin has consistently been a &ldquo;key player&rdquo; in the creation of global certification exams. He understands the thin line between a fair question and a rigorous one, ensuring that a certification truly reflects a professional's capability. Any organization looking for a subject matter expert who can not only master Maximo but also teach it at scale&mdash;whether in a classroom or via a global digital curriculum&mdash;will find Martin to be an irreplaceable asset. I recommend him without reservation.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-aparna-srivastava.jpg" alt="Aparna Srivastava" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Aparna Srivastava</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Learning and Development Leader | Executive Development Program (HRM) XLRI (2021-22) | Certified Life Coach</div>
+            <div style="font-size:12.5px;color:#8890ab">April 8, 2026 &nbsp;·&nbsp; Managed Martin directly</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">I have had the pleasure of working closely with Martin as his manager, and I can confidently say he is one of the most impactful learning professionals I have worked with. He brings deep technical expertise in Maximo, combined with a strong ability to translate complex concepts into practical, high-quality learning experiences. Martin plays a critical role in shaping and strengthening our learning ecosystem. He brings a strong business perspective to planning and content decisions, ensuring both relevance and feasibility. He consistently identifies gaps in existing content and drives improvements based on learner feedback. He is not only a go-to expert for resolving technical challenges for trainings - elearning and classroom, but also a trusted learning consultant who designs role-based learning paths aligned to client business needs. He has been instrumental in the design and development of Maximo Application Suite certifications, contributing across all stages from concept to execution. Martin also actively supports team members through thoughtful design reviews and mentoring, continuously elevating the overall capability of the team through his guidance on both Maximo and content development. Beyond this, Martin is an excellent facilitator who has led impactful workshops and training sessions, consistently demonstrating his ability to engage audiences and build real capability. He is collaborative, dependable, and brings a strong sense of ownership to every initiative he is part of. I strongly recommend Martin to any organization looking for a technically strong, thoughtful, and highly reliable learning professional.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-tristan-ogorman.jpg" alt="Tristan O'Gorman" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Tristan O'Gorman</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Program Director | Product Leader for IBM Asset Lifecycle Management</div>
+            <div style="font-size:12.5px;color:#8890ab">April 7, 2026 &nbsp;·&nbsp; Worked with Martin on the same team</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">I worked with Martin on Maximo training and enablement across clients, partners, and internal teams. He's one of the best I've seen at making complex product knowledge stick. His sessions were well-structured, clearly delivered, and consistently got strong feedback from every audience he worked with. Anyone hiring for Maximo expertise or training and enablement roles would be lucky to have him. Recommended without hesitation.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-wendy-harnar.jpg" alt="Wendy Harnar" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Wendy Harnar</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Communications &amp; Portfolio GTM Program Manager</div>
+            <div style="font-size:12.5px;color:#8890ab">April 7, 2026 &nbsp;·&nbsp; Worked with Martin on the same team</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">I had the pleasure of working with Martin for over three years across multiple training projects, where I served as project lead and partnered closely with him as a peer. Martin is a true Maximo expert with deep experience designing and delivering training that meets learners where they are. His expertise is widely recognized through his active LinkedIn presence and dedicated following, and he is well regarded within the broader Maximo community for sharing practical insights and thought leadership. He has a strong ability to see the whole picture and translate complex system functionality into clear, effective, audience‑focused learning experiences. Martin has built high‑quality training for both instructor‑led and self‑paced formats, including engaging video-based content using animated slides with narration, captions, and transcripts. His work consistently reflects thoughtful instructional design, strong attention to accessibility, and a commitment to learner success. Training leaders and hiring managers can trust Martin to deliver scalable learning solutions that drive real understanding and adoption. Beyond his technical and instructional strengths, Martin is dedicated, collaborative, and genuinely kind. He is a generous mentor and coach who takes pride in helping others grow&mdash;whether that's learning Maximo, building instructional skills, or developing others as trainers. I highly recommend hiring Martin for his Maximo expertise, leadership, and the positive impact he brings to any team.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-kristin-wall-gibson.jpg" alt="Kristin Wall Gibson" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Kristin Wall Gibson</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">IBM Professional Certification Program Manager</div>
+            <div style="font-size:12.5px;color:#8890ab">April 5, 2026 &nbsp;·&nbsp; Worked with Martin but on different teams</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">I have had the honor of working with Martin on several Maximo certification exams over the past decade. I truly enjoy collaborating with him on ideas and new projects. His dedication to his projects is commendable. He is truly one of my favorite subject matter experts. He is highly respected in the Maximo community and within IBM as a whole.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-prashant-bavane.jpg" alt="Prashant Bavane" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Prashant Bavane</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Associate Partner | IBM MAS Maximo Lead Architect | PMP&reg; | ITIL&reg; | IBM Champion | Generative AI &amp; AI Product Development Specialist | IBM Certified Exam Developer | Mentor</div>
+            <div style="font-size:12.5px;color:#8890ab">April 4, 2026 &nbsp;·&nbsp; Worked with Martin, different companies</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">Martin is widely recognized as one of the leading experts in the IBM Maximo ecosystem and a trusted authority within the global EAM community. Through my work and engagement in the Maximo domain, I have seen few professionals who combine deep technical knowledge, strong functional understanding, and architectural clarity as consistently as Martin does. He is especially well known for his contribution to community enablement and professional development through initiatives such as the Maximo Mentor Series. Martin has a unique ability to clearly articulate new Maximo Application Suite (MAS) capabilities, best practices, and real‑world techno‑functional scenarios that are directly applicable to enterprise implementations. His content reflects hands‑on experience and addresses the practical challenges faced across large‑scale implementations and ongoing operational environments. As someone actively involved in Maximo solutioning, delivery, and community engagement myself, I regard Martin as a peer‑level expert whose insights add value across the entire Maximo lifecycle&mdash;from architecture and design through implementation, optimization, and continuous improvement. I would strongly recommend Martin for any Maximo implementation, transformation initiative, or long‑term operational team. His depth of expertise, structured thinking, and commitment to advancing the Maximo community make him a highly dependable and impactful contributor for clients, partners, and delivery organizations alike.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-andrew-jeffery.jpg" alt="Andrew Jeffery" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Andrew Jeffery</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Maximo SME at Naviam (formerly ZNAPZ) | IBM Champion 2026 | Maximo Secrets Author</div>
+            <div style="font-size:12.5px;color:#8890ab">April 3, 2026 &nbsp;·&nbsp; Worked with Martin but on different teams</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">Martin is one of the most knowledgeable Maximo Application Suite (MAS) experts on the planet. He has steered many expert teams through the creation of Maximo and MAS professional certifications and for 20 years has been developing Maximo and MAS training courses for IBM, and teaching the Maximo boot camp. If you are looking for someone to help you develop bespoke training content, you needn't look any further, he is highly recommended. (Andrew Jeffery, the author of Maximo Secrets).</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-jess-williams.jpg" alt="Jess Williams" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Jess Williams, PMP, A-CSPO, PSM, IBM Champion</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Product Owner at EDI, an Arora Company</div>
+            <div style="font-size:12.5px;color:#8890ab">April 3, 2026 &nbsp;·&nbsp; Worked with Martin, different companies</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">Martin is an incredibly knowledgeable resource. I met him years ago when he was the trainer for my Maximo certification class. He breaks down complex concepts and meets you where you are to take you on your learning journey. He is a thought leader that is also approachable and collaborative. I again had the pleasure of working with him more recently to create multiple certification exams. He is especially talented at seeing different viewpoints and merging technical needs, functional requirements, and end user experience into high value delivery. The quality with which he delivers his work is bar none. If you get the chance, I highly recommend working with Martin!</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-liliana-malaescu.jpg" alt="Liliana Malaescu" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Liliana Malaescu</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Maximo Solution Architect at Naviam (formerly ZNAPZ) | IBM Champion</div>
+            <div style="font-size:12.5px;color:#8890ab">April 3, 2026 &nbsp;·&nbsp; Worked with Martin, different companies</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">I had the pleasure of working with Martin on developing exam questions for IBM certifications, and also attended two of his Maximo classes. Both experiences gave me a great appreciation for his expertise and the way he works with people. What stood out to me immediately is how naturally Martin combines deep functional knowledge with a genuine passion for teaching. In his classes, he has a clear and engaging way of explaining complex Maximo concepts, making them easy to understand and apply. You can tell he truly cares about helping others learn, not just delivering content. Working together on certification materials was equally impressive. Martin brings a high level of attention to detail and a strong understanding of what truly matters in real-world scenarios. He consistently ensures that everything is practical, relevant, and aligned with real user needs. Beyond his expertise, Martin is approachable, supportive, with a wonderful sense of humor, and a pleasure to collaborate with. He creates a positive environment where ideas flow easily and everyone feels comfortable contributing. I would wholeheartedly recommend Martin to anyone looking for not just a Maximo expert, but a trusted partner and just a great person to work with.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #ececf2;border-radius:10px;padding:clamp(20px,4vw,28px) clamp(18px,4vw,32px);box-shadow:0 2px 6px rgba(29,36,60,0.04)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:18px">
+          <img src="assets/rec-jan-willem-steur.jpg" alt="Jan-Willem Steur" style="width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid #ececf2">
+          <div>
+            <div style="color:#1d243c;font-weight:700;font-size:16px;margin:0 0 2px">Jan-Willem Steur</div>
+            <div style="font-size:13px;color:#3f4c7c;margin:0 0 4px">Manager Business Development at Naviam (formerly ZNAPZ) | Asset Management Solutions | IBM Maximo | IBM Champion 2023, 2024, 2025 &amp; 2026</div>
+            <div style="font-size:12.5px;color:#8890ab">April 3, 2026 &nbsp;·&nbsp; Worked with Martin, different companies</div>
+          </div>
+        </div>
+        <p data-rec-text="1" style="font-size:15px;color:#3f4c7c;margin:0;text-wrap:pretty">I have had the pleasure of working with Martin Williams and can confidently say he is one of the most experienced and impactful training professionals I know. Martin brings together deep technical expertise and a rare ability to create learning content that is both practical and highly effective. His work in IBM partner enablement, especially around Maximo Enterprise Asset Management and IT Service Management, has helped technical audiences around the world build real capability and confidence. What sets Martin apart is his ability to combine strong instructional design with innovation. He has played a leading role in introducing AI-driven tools into enablement programs, accelerating content development while improving quality, consistency, and scalability. He has also designed impressive technical bootcamps, simulation-based training, and advanced scenario-driven learning programs that delivered measurable business impact. Just as importantly, Martin is a trusted, social, and highly collaborative person to work with. I know him as a senior training manager and developer who strengthens every project he joins. I always value having Martin involved, because he consistently raises both the quality of the work and the energy of the team. I highly recommend Martin.</p>
+        <button type="button" data-rec-toggle="1" style="display:none;margin-top:12px;background:none;border:0;padding:0;font-family:inherit;font-size:14px;font-weight:700;color:#5b37ff;cursor:pointer">Read more</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer style="background:#f5f5f8;padding:56px 0 28px">
+    <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;color:#1d243c;margin-bottom:14px">
+        <img src="assets/logo.png" alt="4Max Ltd" style="width:28px;height:28px;object-fit:contain"> 4Max Ltd
+      </div>
+      <p style="margin:0 0 20px;font-size:15px">Maximo Enablement Specialist and Consulting Services</p>
+      <div style="display:flex;gap:14px;margin-bottom:36px">
+        <a href="#" aria-label="YouTube" style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9e9f0;color:#1d243c"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3.2-.4-4.7a3 3 0 0 0-2.1-2.1C17.9 5 12 5 12 5s-5.9 0-7.5.2a3 3 0 0 0-2.1 2.1C2 8.8 2 12 2 12s0 3.2.4 4.7a3 3 0 0 0 2.1 2.1C6.1 19 12 19 12 19s5.9 0 7.5-.2a3 3 0 0 0 2.1-2.1c.4-1.5.4-4.7.4-4.7zM10 15V9l5 3-5 3z"></path></svg></a>
+        <a href="https://www.linkedin.com/in/martin-williams-maximo" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9e9f0;color:#1d243c"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.5 8.5h3.9V21H3.5V8.5zM10 8.5h3.7v1.7h.05c.52-.94 1.78-1.93 3.67-1.93 3.92 0 4.64 2.4 4.64 5.53V21h-3.9v-6.14c0-1.46-.03-3.34-2.04-3.34-2.04 0-2.35 1.6-2.35 3.24V21H10V8.5z"></path></svg></a>
+        <a href="mailto:martin@4max.co.uk" aria-label="Email" style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e9e9f0;color:#1d243c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      </div>
+      <div style="text-align:center;font-size:13px;color:#8890ab;border-top:1px solid #e6e6ee;padding-top:24px">Copyright © 2026 &nbsp;·&nbsp; 4Max Ltd &nbsp;·&nbsp; All rights reserved</div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  navRef = React.createRef();
+  listRef = React.createRef();
+  renderVals() {
+    return { navRef: this.navRef, listRef: this.listRef, consultRef: this.navRef };
+  }
+}
+</script>
+
+</body>
+</html>
